@@ -138,7 +138,7 @@ git push
       background: var(--accent);
     }
     .hero-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Playfair Display', sans-serif;
       font-size: clamp(3.2rem, 8.8vw, 6.5rem);
       font-weight: 600;
       line-height: 1.0;
@@ -496,6 +496,7 @@ git push
     <p class="hero-sub">
       Aviation, automotive, landscape, and night photography shot
       in Colorado Springs and beyond.
+
     </p>
     <a href="#gallery" class="hero-cta">View Portfolio</a>
   </div>
@@ -516,6 +517,7 @@ git push
     <button class="tab" data-filter="automotive">Automotive</button>
     <button class="tab" data-filter="landscape">Landscape</button>
     <button class="tab" data-filter="night">Night</button>
+    <button class="tab" data-filter="more">More</button>
   </div>
 
   <!-- GRID
@@ -579,23 +581,23 @@ git push
     </div>
 
 
-       <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+       <div class="grid-item" data-cat="landscape" data-caption="Landscape · Arches National Park">
       <div class="img-wrap">
         <img src="LAN3.jpg" alt="Landscape 3"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">landscape · 03</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Arches National Park</span></div></div>
     </div>
 
 
-     <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+     <div class="grid-item" data-cat="landscape" data-caption="Landscape · Maui">
       <div class="img-wrap">
         <img src="LAN4.jpg" alt="Landscape 4"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">landscape · 04</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Maui</span></div></div>
     </div>
 
 
@@ -617,22 +619,23 @@ git push
       <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
-      <div class="img-wrap wide">
+
+    <div class="grid-item" data-cat="landscape" data-caption="Landscape · Leadville">
+      <div class="img-wrap">
         <img src="LAN1.jpeg" alt="Landscape 1"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">landscape · 01</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Leadville</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+    <div class="grid-item" data-cat="landscape" data-caption="Landscape · Arches National Park">
       <div class="img-wrap">
         <img src="LAN2.jpg" alt="Landscape 2"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">landscape · 02</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Arches National Park</span></div></div>
     </div>
 
 
@@ -689,6 +692,18 @@ git push
    
 
     <!-- ── NIGHT ─────────────────────────────────────── -->
+
+          <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
+      <div class="img-wrap">
+        <img src="NI3.jpg" alt="Night 3"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">night · 03</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
+    </div>
+
+
+
     <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
       <div class="img-wrap">
         <img src="NI1.jpg" alt="Night 1"
@@ -707,25 +722,6 @@ git push
       <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap wide">
-        <img src="NI7.jpg" alt="Night 7"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 07</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-
-<div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
-      <div class="img-wrap wide">
-        <img src="AV9.jpg" alt="Aviation 9"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">aviation · 09</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
-    </div>
-
 
     <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
       <div class="img-wrap wide">
@@ -734,6 +730,37 @@ git push
         <div class="img-placeholder">aviation · 08</div>
       </div>
       <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
+    </div>
+
+
+    <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="AV7.jpg" alt="Aviation 7"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">aviation · 07</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
+    </div>
+
+
+
+        <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+      <div class="img-wrap">
+        <img src="LAN6.jpg" alt="Landscape 6"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">landscape · 06</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+    </div>
+
+
+         <div class="grid-item" data-cat="landscape" data-caption="Landscape · Canyonlands National Park">
+      <div class="img-wrap wide">
+        <img src="LAN5.jpg" alt="Landscape 5"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">landscape · 05</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Canyonlands National Park</span></div></div>
     </div>
 
 
@@ -757,52 +784,15 @@ git push
     </div>
 
 
-             <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
-      <div class="img-wrap">
-        <img src="CAR9.jpg" alt="Automotive 9"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 09</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
-    </div>
-
-
-       <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+     <div class="grid-item" data-cat="more" data-caption="More · Colorado Springs">
       <div class="img-wrap wide">
-        <img src="LAN5.jpg" alt="Landscape 5"
+        <img src="MORE1.jpg" alt="More 1"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">landscape · 05</div>
+        <div class="img-placeholder">more · 01</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">More<span>Colorado Springs</span></div></div>
     </div>
 
-
-       <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap">
-        <img src="NI3.jpg" alt="Night 3"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 03</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-       <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap wide">
-        <img src="NI5.jpg" alt="Night 5"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 05</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-       <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap">
-        <img src="NI6.jpg" alt="Night 6"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 06</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
 
 
   </div><!-- /grid -->
@@ -843,7 +833,7 @@ git push
     <p class="section-label">Work With Me</p>
     <h2 class="section-title">Contact</h2>
     <p class="section-desc">
-      I would love the opportuity to work with you! Please contact me with the email below for general inquiries.
+      I would love the opportuity to work with you! Please contact me at the email below for general inquiries.
     </p>
     <div class="contact-links">
       <a class="contact-link" href="mailto:lukedulski2@gmail.com">✉ lukedulski2@gmail.com</a>
