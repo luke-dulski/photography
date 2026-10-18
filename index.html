@@ -1,12 +1,3 @@
-/* 
-To update:
-(In terminal)
-cd /Users/lukedulski/Downloads/lukedulskiphotography
-git add .
-git commit -m "New update"
-git push
-*/
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,22 +128,24 @@ git push
       width: 28px; height: 1px;
       background: var(--accent);
     }
-    .hero-title {
-      font-family: 'Playfair Display', sans-serif;
-      font-size: clamp(3.2rem, 8.8vw, 6.5rem);
-      font-weight: 600;
-      line-height: 1.0;
-      color: var(--white);
-      margin-bottom: 1.5rem;
-    }
-    .hero-title em {
-      font-style: italic;
-      font-weight: 400;
-      color: var(--amber);
-    }
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  font-weight: 600;
+  line-height: 1.05;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--amber) !important;
+}
+    
     .hero-sub {
       font-size: 0.92rem;
-      color: var(--muted);
+      color: var(--accent);
       max-width: 420px;
       margin-bottom: 2.75rem;
       line-height: 1.75;
@@ -492,10 +485,11 @@ git push
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">Luke Dulski · Colorado Springs</p>
-    <h1 class="hero-title">Caught<br>in<em> 4K</em></h1>
+    <h1 class="hero-title">
+  Just Keep<br><em>Capturing</em>
+</h1>
     <p class="hero-sub">
-      Aviation, automotive, landscape, and night photography shot
-      in Colorado Springs and beyond.
+      I'm an amateur photographer from Colorado Springs. Here's some of my photos.
 
     </p>
     <a href="#gallery" class="hero-cta">View Portfolio</a>
@@ -507,18 +501,20 @@ git push
   <div class="gallery-header fade-in">
     <p class="section-label">Portfolio</p>
     <h2 class="section-title">Photos</h2>
-    <p class="section-desc">My best aviation, automotive, landscape, and night photography.</p>
+    <p class="section-desc">My best aviation, car, landscape, and night photography.</p>
   </div>
 
   <!-- TABS -->
   <div class="tabs">
     <button class="tab active" data-filter="all">All</button>
     <button class="tab" data-filter="aviation">Aviation</button>
-    <button class="tab" data-filter="automotive">Automotive</button>
+    <button class="tab" data-filter="cars">Cars</button>
     <button class="tab" data-filter="landscape">Landscape</button>
     <button class="tab" data-filter="night">Night</button>
     <button class="tab" data-filter="more">More</button>
   </div>
+
+
 
   <!-- GRID
        ─────────────────────────────────────────────────────────────────
@@ -527,7 +523,7 @@ git push
          data-cat, data-caption, and .img-wrap aspect class.
        • img-wrap classes: (default = 3:2)  tall = portrait  wide = 16:9  square = 1:1
        • Naming convention used below:
-           AV1–AV5   aviation      CAR1–CAR5  automotive
+           AV1–AV5   aviation      CAR1–CAR5  cars
            LAN1–LAN5 landscape     NI1–NI5    night
        ─────────────────────────────────────────────────────────────────
   -->
@@ -543,25 +539,51 @@ git push
       <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+
+          <div class="grid-item" data-cat="more" data-caption="More · Cliford Township">
       <div class="img-wrap wide">
-        <img src="AV2.jpg" alt="Aviation 2"
+        <img src="MORE5.jpg" alt="More 5"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">aviation · 02</div>
+        <div class="img-placeholder">more · 05</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">More<span>Cliford Township</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+
+           <!-- ── CARS ───────────────────────────────────────── -->
+    <div class="grid-item" data-cat="cars" data-caption="Cars · Perry Park">
       <div class="img-wrap">
-        <img src="AV3.jpg" alt="Aviation 3"
+        <img src="CAR3.png" alt="Cars 3"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">aviation · 03</div>
+        <div class="img-placeholder">cars · 03</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Perry Park</span></div></div>
+    </div>
+
+
+
+        <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
+      <div class="img-wrap">
+        <img src="NI1.jpg" alt="Night 1"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">night · 01</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
+    </div>
+
+
+
+       <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+      <div class="img-wrap">
+        <img src="AV6.jpg" alt="Aviation 6"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">aviation · 06</div>
       </div>
       <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+
+       <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
       <div class="img-wrap wide">
         <img src="AV4.jpg" alt="Aviation 4"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
@@ -571,63 +593,79 @@ git push
     </div>
 
 
-        <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap">
-        <img src="NI4.jpg" alt="Night 4"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 04</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-
-       <div class="grid-item" data-cat="landscape" data-caption="Landscape · Arches National Park">
+       <div class="grid-item" data-cat="landscape" data-caption="Landscape · Cliford Township">
       <div class="img-wrap">
         <img src="LAN3.jpg" alt="Landscape 3"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">landscape · 03</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Arches National Park</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Cliford Township</span></div></div>
     </div>
 
 
-     <div class="grid-item" data-cat="landscape" data-caption="Landscape · Maui">
+        <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="CAR1.jpg" alt="Cars 1"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">cars · 01</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
+    </div>
+
+
+        <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="AV2.jpg" alt="Aviation 2"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">aviation · 02</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
+    </div>
+
+
+
+        <div class="grid-item" data-cat="night" data-caption="Night · Denver">
+      <div class="img-wrap">
+        <img src="NI4.jpg" alt="Night 4"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">night · 04</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Night<span>Denver</span></div></div>
+    </div>
+
+
+     <div class="grid-item" data-cat="landscape" data-caption="Landscape · Cliford Township">
       <div class="img-wrap">
         <img src="LAN4.jpg" alt="Landscape 4"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">landscape · 04</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Maui</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Cliford Township</span></div></div>
     </div>
 
 
-    <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
+
+                 <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
       <div class="img-wrap wide">
-        <img src="CAR3.jpg" alt="Automotive 3"
+        <img src="CAR7.jpg" alt="Cars 7"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 03</div>
+        <div class="img-placeholder">cars · 07</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
     </div>
 
-    <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
+
+
+             <div class="grid-item" data-cat="cars" data-caption="Cars · Denver">
       <div class="img-wrap wide">
-        <img src="CAR4.jpg" alt="Automotive 4"
+        <img src="CAR9.jpg" alt="Cars 9"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 04</div>
+        <div class="img-placeholder">cars · 09</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Denver</span></div></div>
     </div>
 
 
-    <div class="grid-item" data-cat="landscape" data-caption="Landscape · Leadville">
-      <div class="img-wrap">
-        <img src="LAN1.jpeg" alt="Landscape 1"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">landscape · 01</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Leadville</span></div></div>
-    </div>
 
     <div class="grid-item" data-cat="landscape" data-caption="Landscape · Arches National Park">
       <div class="img-wrap">
@@ -637,47 +675,37 @@ git push
       </div>
       <div class="overlay"><div class="overlay-caption">Landscape<span>Arches National Park</span></div></div>
     </div>
+    
 
-
-    <!-- ── CARS ───────────────────────────────────────── -->
-    <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
+              <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
       <div class="img-wrap">
-        <img src="CAR1.jpg" alt="Automotive 1"
+        <img src="NI3.jpg" alt="Night 3"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 01</div>
+        <div class="img-placeholder">night · 03</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
-    </div>
-
-     <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
-      <div class="img-wrap">
-        <img src="CAR6.jpg" alt="Automotive 6"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 06</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
     </div>
 
 
-     <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
+     <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
       <div class="img-wrap">
-        <img src="CAR8.jpg" alt="Automotive 8"
+        <img src="CAR5.jpg" alt="Cars 5"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 08</div>
+        <div class="img-placeholder">cars · 05</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
     </div>
 
 
-
-   <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
-      <div class="img-wrap">
-        <img src="AV6.jpg" alt="Aviation 6"
+        <div class="grid-item" data-cat="more" data-caption="More · Clifford Township">
+      <div class="img-wrap wide">
+        <img src="MORE3.jpg" alt="More 3"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">aviation · 06</div>
+        <div class="img-placeholder">more · 03</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">More<span>Clifford Township</span></div></div>
     </div>
+
     
     
  <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
@@ -689,48 +717,10 @@ git push
       <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
     </div>
 
-   
+
 
     <!-- ── NIGHT ─────────────────────────────────────── -->
 
-          <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap">
-        <img src="NI3.jpg" alt="Night 3"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 03</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-
-
-    <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap">
-        <img src="NI1.jpg" alt="Night 1"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 01</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-    <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
-      <div class="img-wrap wide">
-        <img src="NI2.jpg" alt="Night 2"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">night · 02</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
-    </div>
-
-
-    <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
-      <div class="img-wrap wide">
-        <img src="AV8.jpg" alt="Aviation 8"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">aviation · 08</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
-    </div>
 
 
     <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
@@ -743,14 +733,23 @@ git push
     </div>
 
 
-
-        <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+            <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
       <div class="img-wrap">
-        <img src="LAN6.jpg" alt="Landscape 6"
+        <img src="NI5.jpg" alt="Night 5"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">landscape · 06</div>
+        <div class="img-placeholder">night · 05</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
+    </div>
+
+
+         <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="AV8.jpg" alt="Aviation 8"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">aviation · 08</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
     </div>
 
 
@@ -764,24 +763,15 @@ git push
     </div>
 
 
-         <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
+         <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
       <div class="img-wrap wide">
-        <img src="CAR5.jpg" alt="Automotive 5"
+        <img src="CAR6.jpg" alt="Cars 6"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 05</div>
+        <div class="img-placeholder">cars · 06</div>
       </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
     </div>
 
-
-         <div class="grid-item" data-cat="automotive" data-caption="Automotive · Colorado Springs">
-      <div class="img-wrap wide">
-        <img src="CAR7.jpg" alt="Automotive 7"
-             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
-        <div class="img-placeholder">automotive · 07</div>
-      </div>
-      <div class="overlay"><div class="overlay-caption">Automotive<span>Colorado Springs</span></div></div>
-    </div>
 
 
      <div class="grid-item" data-cat="more" data-caption="More · Colorado Springs">
@@ -789,6 +779,130 @@ git push
         <img src="MORE1.jpg" alt="More 1"
              onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
         <div class="img-placeholder">more · 01</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">More<span>Colorado Springs</span></div></div>
+    </div>
+
+
+               <div class="grid-item" data-cat="landscape" data-caption="Landscape · Colorado Springs">
+      <div class="img-wrap">
+        <img src="LAN6.jpg" alt="Landscape 6"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">landscape · 06</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Colorado Springs</span></div></div>
+    </div>
+
+
+
+    <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="CAR2.jpg" alt="Cars 2"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">cars · 02</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
+    </div>
+
+
+   
+         <div class="grid-item" data-cat="cars" data-caption="Cars · Perry Park">
+      <div class="img-wrap wide">
+        <img src="CAR8.png" alt="Cars 8"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">cars · 08</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Perry Park</span></div></div>
+    </div>
+
+
+
+    <div class="grid-item" data-cat="aviation" data-caption="Aviation · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="AV3.jpg" alt="Aviation 3"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">aviation · 03</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Aviation<span>Colorado Springs</span></div></div>
+    </div>
+
+
+        <div class="grid-item" data-cat="landscape" data-caption="Landscape · Cliford Township">
+      <div class="img-wrap">
+        <img src="LAN1.jpg" alt="Landscape 1"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">landscape · 01</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Landscape<span>Cliford Township</span></div></div>
+    </div>
+
+
+
+      <div class="grid-item" data-cat="more" data-caption="More · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="MORE4.jpg" alt="More 4"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">more · 04</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">More<span>Colorado Springs</span></div></div>
+    </div>
+
+
+         <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="CAR10.jpg" alt="Cars 10"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">cars · 10</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
+    </div>
+
+
+         <div class="grid-item" data-cat="cars" data-caption="Cars · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="CAR11.jpg" alt="Cars 11"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">cars · 11</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Colorado Springs</span></div></div>
+    </div>
+
+
+        <div class="grid-item" data-cat="night" data-caption="Night · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="NI2.jpg" alt="Night 2"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">night · 02</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Night<span>Colorado Springs</span></div></div>
+    </div>
+
+
+         <div class="grid-item" data-cat="cars" data-caption="Cars · Perry Park">
+      <div class="img-wrap wide">
+        <img src="CAR12.png" alt="Cars 12"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">cars · 12</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">Cars<span>Perry Park</span></div></div>
+    </div>
+
+
+      <div class="grid-item" data-cat="more" data-caption="More · Cliford Township">
+      <div class="img-wrap wide">
+        <img src="MORE2.jpg" alt="More 2"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">more · 02</div>
+      </div>
+      <div class="overlay"><div class="overlay-caption">More<span>Cliford Township</span></div></div>
+    </div>
+
+
+      <div class="grid-item" data-cat="more" data-caption="More · Colorado Springs">
+      <div class="img-wrap wide">
+        <img src="MORE6.jpg" alt="More 6"
+             onerror="this.style.display='none';this.parentElement.querySelector('.img-placeholder').style.display='flex'">
+        <div class="img-placeholder">more · 06</div>
       </div>
       <div class="overlay"><div class="overlay-caption">More<span>Colorado Springs</span></div></div>
     </div>
@@ -802,7 +916,7 @@ git push
 <section id="about">
   <div class="about-grid fade-in">
     <div class="about-img-wrap">
-      <img src="PROF.jpeg" alt="Luke Dulski portrait"
+      <img src="PROF.jpg" alt="Luke Dulski portrait"
            onerror="this.style.display='none'">
     </div>
     <div class="about-text">
@@ -810,18 +924,16 @@ git push
       <h2 class="section-title">Luke Dulski</h2>
       <!-- ← Edit the paragraphs below with your own bio -->
       <p class="about-body">
-        Based in Colorado Springs, I photograph various subjects and I enjoy experimenting
-        with different lighting and camera settings. I use Lightroom to edit my photos
-        and my primary camera is the Sony RX 10 IV. 
+        I like to say I'm just messing around with a camera, but I've taken some pretty decent photos, so why not keep going? I have experimented quite a bit with different subjects and lighting. It's always fun to see what actually ends up working. I use Lightroom to edit my photos and my primary camera is the Sony RX 10 IV.
       </p>
       <p class="about-body">
-        Over the years, I have refined my photography skills and more recently stared editing my photos
-        with professional software. In doing so, I hope to create more polished work and become a more versatile photographer.
+        I've been taking photos for many years now, and I have definitely refined my style and enhanced my results by learning Lightroom. Although this is just a hobby for me, I'm excited to see what opportunities come up in the future as I continue to improve my skills and travel to different places.
       </p>
       <p class="section-label" style="margin-top:1.5rem;">Gear</p>
       <!-- ← Edit with your actual equipment -->
       <ul class="Camera">
-        <li>Sony RX 10 IV</li>
+        <li>Sony RX 10 IV (primary)</li>
+        <li>Nikon D5100 (previous camera)</li>
       </ul>
     </div>
   </div>
